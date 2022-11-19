@@ -1,0 +1,32 @@
+<%= form_with(model: ator) do |form| %>
+  <% if ator.errors.any? %>
+    <div style="color: red">
+      <h2><%= pluralize(ator.errors.count, "error") %> prohibited this ator from being saved:</h2>
+
+      <ul>
+        <% ator.errors.each do |error| %>
+          <li><%= error.full_message %></li>
+        <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div>
+    <%= form.label :nome, style: "display: block" %>
+    <%= form.text_field :nome %>
+  </div>
+
+  <div>
+    <%= form.label :ano_nascimento, style: "display: block" %>
+    <%= form.number_field :ano_nascimento %>
+  </div>
+
+  <div>
+    <%= form.label :email, style: "display: block" %>
+    <%= form.text_field :email %>
+  </div>
+
+  <div>
+    <%= form.submit %>
+  </div>
+<% end %>
