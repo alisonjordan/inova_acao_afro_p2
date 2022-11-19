@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # README
 
 This README would normally document whatever steps are necessary to get the
@@ -22,3 +23,6 @@ Things you may want to cover:
 * Deployment instructions
 
 * ...
+=======
+# inova_acao_afro_p2
+>>>>>>> c7bf013c1d8eab49c5d9f9ae0c98e00f282fde0a
