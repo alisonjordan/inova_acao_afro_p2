@@ -1,5 +1,6 @@
 class AtorsController < ApplicationController
   before_action :set_ator, only: %i[ show edit update destroy ]
+  before_action :set_filme, only: %i[ show edit update destroy ]
 
   # GET /ators or /ators.json
   def index
@@ -58,6 +59,9 @@ class AtorsController < ApplicationController
   end
 
   private
+    def set_filme
+      @filme = Filme.find(params[:id])
+    end
     # Use callbacks to share common setup or constraints between actions.
     def set_ator
       @ator = Ator.find(params[:id])

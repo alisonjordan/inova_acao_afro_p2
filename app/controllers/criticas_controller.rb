@@ -85,6 +85,9 @@ end
     def set_critica
       @critica = Critica.find(params[:id])
     end
+    def set_filme
+      @filme= Filme.all.pluck(:titulo,:id)
+    end
 
     # Only allow a list of trusted parameters through.
     def critica_params
