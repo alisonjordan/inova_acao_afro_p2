@@ -1,5 +1,7 @@
 class CriticasController < ApplicationController
   before_action :set_critica, only: %i[ show edit update destroy ]
+  before_action :set_filme, only: %i[new show edit create update ]
+  
 
   # GET /criticas or /criticas.json
   def index
@@ -61,6 +63,9 @@ class CriticasController < ApplicationController
     # Use callbacks to share common setup or constraints between actions.
     def set_critica
       @critica = Critica.find(params[:id])
+    end
+    def set_filme
+      @filme= Filme.all.pluck(:titulo,:id)
     end
 
     # Only allow a list of trusted parameters through.
