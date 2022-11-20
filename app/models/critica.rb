@@ -3,5 +3,5 @@ class Critica < ApplicationRecord
 
   validates :comentario, :Filme, presence: true
 
-  default_scope { where(esta_aprovado: true ) }
+  
 end

@@ -5,6 +5,7 @@
 <div>
   <%= link_to "Editar filme", edit_filme_path(@filme) %> |
   <%= link_to "Voltar aos filmes", filmes_path %>
+  <%= link_to "Fazer crítica", new_critica_path %>
 
   <%= button_to "Deletar filme", @filme, method: :delete %>
 </div>

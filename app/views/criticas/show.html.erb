@@ -3,8 +3,9 @@
 <%= render @critica %>
 
 <div>
-  <%= link_to "Edit this critica", edit_critica_path(@critica) %> |
-  <%= link_to "Back to criticas", criticas_path %>
+  
+  <%= link_to "Aprovar Comentário", edit_critica_path(@critica) %> |
+  <%= link_to "Voltar aos comentários", criticas_path %>
 
-  <%= button_to "Destroy this critica", @critica, method: :delete %>
+  <%= button_to "Apagar comentário", @critica, method: :delete %>
 </div>

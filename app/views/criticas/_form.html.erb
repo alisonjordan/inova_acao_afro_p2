@@ -16,14 +16,14 @@
     <%= form.text_area :comentario %>
   </div>
 
-  <div>
+  <div hidden>
     <%= form.label :esta_aprovado, style: "display: block" %>
-    <%= form.check_box :esta_aprovado %>
+   <%= form.check_box :esta_aprovado %>
   </div>
 
   <div>
     <%= form.label :Filme_id, style: "display: block" %>
-    <%= form.text_field :Filme_id %>
+    <%= form.select(:Filme_id,@filme,{},{}) %>
   </div>
 
   <div>

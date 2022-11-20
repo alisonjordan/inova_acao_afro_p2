@@ -1,5 +1,7 @@
 class Log < ApplicationRecord
 
-    alidates :comentario_id, presence: true
+    validates :comentario_id, presence: true
+
+    
 
 end

@@ -1,14 +1,14 @@
 <p style="color: green"><%= notice %></p>
 
-<h1>Criticas</h1>
+<h1>Comentários</h1>
 
 <div id="criticas">
   <% @criticas.each do |critica| %>
     <%= render critica %>
     <p>
-      <%= link_to "Show this critica", critica %>
+      <%= link_to "Mostrar comentário", critica %>
     </p>
   <% end %>
 </div>
 
-<%= link_to "New critica", new_critica_path %>
+<%= link_to "Novo comentário", new_critica_path %>
