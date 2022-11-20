@@ -10,7 +10,11 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
+<<<<<<< HEAD
 ActiveRecord::Schema[7.0].define(version: 2022_11_20_101607) do
+=======
+ActiveRecord::Schema[7.0].define(version: 2022_11_20_012545) do
+>>>>>>> 774b921cf4b4f8a27f6973d8fb5646edccfc9e64
   create_table "ators", force: :cascade do |t|
     t.string "nome"
     t.integer "ano_nascimento"
@@ -19,10 +23,23 @@ ActiveRecord::Schema[7.0].define(version: 2022_11_20_101607) do
     t.datetime "updated_at", null: false
   end
 
+<<<<<<< HEAD
   create_table "logs", force: :cascade do |t|
     t.integer "comentario_id"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end
 
+=======
+  create_table "filmes", force: :cascade do |t|
+    t.string "titulo"
+    t.integer "ano_lancamento"
+    t.integer "ator_id", null: false
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+    t.index ["ator_id"], name: "index_filmes_on_ator_id"
+  end
+
+  add_foreign_key "filmes", "ators"
+>>>>>>> 774b921cf4b4f8a27f6973d8fb5646edccfc9e64
 end
