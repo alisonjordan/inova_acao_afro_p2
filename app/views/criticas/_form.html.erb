@@ -1,0 +1,32 @@
+<%= form_with(model: critica) do |form| %>
+  <% if critica.errors.any? %>
+    <div style="color: red">
+      <h2><%= pluralize(critica.errors.count, "error") %> prohibited this critica from being saved:</h2>
+
+      <ul>
+        <% critica.errors.each do |error| %>
+          <li><%= error.full_message %></li>
+        <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div>
+    <%= form.label :comentario, style: "display: block" %>
+    <%= form.text_area :comentario %>
+  </div>
+
+  <div>
+    <%= form.label :esta_aprovado, style: "display: block" %>
+    <%= form.check_box :esta_aprovado %>
+  </div>
+
+  <div>
+    <%= form.label :Filme_id, style: "display: block" %>
+    <%= form.text_field :Filme_id %>
+  </div>
+
+  <div>
+    <%= form.submit %>
+  </div>
+<% end %>

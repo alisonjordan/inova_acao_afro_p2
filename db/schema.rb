@@ -10,13 +10,22 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema[7.0].define(version: 2022_11_20_012545) do
+ActiveRecord::Schema[7.0].define(version: 2022_11_20_110657) do
   create_table "ators", force: :cascade do |t|
     t.string "nome"
     t.integer "ano_nascimento"
     t.string "email"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
+  end
+
+  create_table "criticas", force: :cascade do |t|
+    t.text "comentario"
+    t.boolean "esta_aprovado"
+    t.integer "Filme_id", null: false
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+    t.index ["Filme_id"], name: "index_criticas_on_Filme_id"
   end
 
   create_table "filmes", force: :cascade do |t|
@@ -28,5 +37,6 @@ ActiveRecord::Schema[7.0].define(version: 2022_11_20_012545) do
     t.index ["ator_id"], name: "index_filmes_on_ator_id"
   end
 
+  add_foreign_key "criticas", "Filmes"
   add_foreign_key "filmes", "ators"
 end
