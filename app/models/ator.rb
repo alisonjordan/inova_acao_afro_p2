@@ -1,5 +1,5 @@
 class Ator < ApplicationRecord
-
-    validates :nome, :ano_nascimento, :email, presence: true
+    validates :ano_nascimento, presence: true, numericality: { greater_than: 0 }
+    validates :nome, :email, presence: true
     validates :email, uniqueness: true
 end

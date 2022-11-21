@@ -1,6 +1,7 @@
 class AtorsController < ApplicationController
   before_action :set_ator, only: %i[ show edit update destroy ]
   before_action :set_filme, only: %i[ show edit update destroy ]
+  
 
   # GET /ators or /ators.json
   def index
@@ -51,6 +52,7 @@ class AtorsController < ApplicationController
   # DELETE /ators/1 or /ators/1.json
   def destroy
     @ator.destroy
+
 
     respond_to do |format|
       format.html { redirect_to ators_url, notice: "Ator was successfully destroyed." }

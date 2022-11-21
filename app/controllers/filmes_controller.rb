@@ -54,7 +54,7 @@ class FilmesController < ApplicationController
     @filme.destroy
 
     respond_to do |format|
-      format.html { redirect_to filmes_url, notice: "Filme Excluído!" }
+      format.html { redirect_to filmes_url, notice: "Filme Deletado!" }
       format.json { head :no_content }
     end
   end
