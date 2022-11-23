@@ -4,7 +4,7 @@ RSpec.describe Ator, type: :model do
   subject {
     described_class.new(
       nome: 'lorem lorem',
-      email: 'lorem@lorem.com',
+      email: 'lorem@5lorem.com',
       ano_nascimento: '2000'
     )
   }
