@@ -25,91 +25,6 @@
           null
         ]
       },
-      "/mnt/c/cesar/inova/inova_acao_afro_p2/app/controllers/filmes_controller.rb": {
-        "lines": [
-          1,
-          1,
-          1,
-          null,
-          null,
-          1,
-          2,
-          null,
-          null,
-          null,
-          1,
-          null,
-          null,
-          null,
-          1,
-          1,
-          null,
-          null,
-          null,
-          null,
-          1,
-          null,
-          null,
-          null,
-          1,
-          0,
-          null,
-          0,
-          0,
-          0,
-          0,
-          null,
-          0,
-          0,
-          null,
-          null,
-          null,
-          null,
-          null,
-          1,
-          0,
-          0,
-          0,
-          0,
-          null,
-          0,
-          0,
-          null,
-          null,
-          null,
-          null,
-          null,
-          1,
-          0,
-          null,
-          0,
-          0,
-          0,
-          null,
-          null,
-          null,
-          1,
-          null,
-          1,
-          1,
-          null,
-          1,
-          0,
-          null,
-          null,
-          null,
-          1,
-          0,
-          null,
-          null
-        ]
-      },
-      "/mnt/c/cesar/inova/inova_acao_afro_p2/app/controllers/application_controller.rb": {
-        "lines": [
-          1,
-          null
-        ]
-      },
       "/mnt/c/cesar/inova/inova_acao_afro_p2/app/models/ator.rb": {
         "lines": [
           1,
@@ -123,17 +38,6 @@
         "lines": [
           1,
           1,
-          null
-        ]
-      },
-      "/mnt/c/cesar/inova/inova_acao_afro_p2/app/models/filme.rb": {
-        "lines": [
-          1,
-          1,
-          1,
-          1,
-          1,
-          null,
           null
         ]
       },
@@ -151,6 +55,14 @@
         "lines": [
           0,
           0,
+          0,
+          0
+        ],
+        "branches": {
+        }
+      },
+      "/mnt/c/cesar/inova/inova_acao_afro_p2/app/controllers/application_controller.rb": {
+        "lines": [
           0,
           0
         ],
@@ -341,6 +253,87 @@
         "branches": {
         }
       },
+      "/mnt/c/cesar/inova/inova_acao_afro_p2/app/controllers/filmes_controller.rb": {
+        "lines": [
+          0,
+          0,
+          0,
+          null,
+          null,
+          0,
+          0,
+          0,
+          null,
+          null,
+          0,
+          0,
+          null,
+          null,
+          0,
+          0,
+          null,
+          0,
+          null,
+          null,
+          0,
+          0,
+          null,
+          null,
+          0,
+          0,
+          null,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          null,
+          null,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          null,
+          null,
+          0,
+          0,
+          null,
+          0,
+          0,
+          0,
+          0,
+          0,
+          null,
+          0,
+          null,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          null,
+          null,
+          0,
+          0,
+          0,
+          0
+        ],
+        "branches": {
+        }
+      },
       "/mnt/c/cesar/inova/inova_acao_afro_p2/app/controllers/logs_controller.rb": {
         "lines": [
           0,
@@ -385,6 +378,19 @@
         "branches": {
         }
       },
+      "/mnt/c/cesar/inova/inova_acao_afro_p2/app/models/filme.rb": {
+        "lines": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          null
+        ],
+        "branches": {
+        }
+      },
       "/mnt/c/cesar/inova/inova_acao_afro_p2/app/models/log.rb": {
         "lines": [
           0,
@@ -395,6 +401,6 @@
         }
       }
     },
-    "timestamp": 1669256152
+    "timestamp": 1669257849
   }
 }

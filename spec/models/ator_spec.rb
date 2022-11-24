@@ -9,7 +9,7 @@ RSpec.describe Ator, type: :model do
     )
   }
 
-  context 'Validate general attributes' do
+  context 'Validate attributes' do
     it 'is valid with attributes' do
       expect(subject).to be_valid
     end
@@ -31,7 +31,7 @@ RSpec.describe Ator, type: :model do
   end
 
   context 'Validate unique EMAIL ' do
-    it 'is valid with attributes' do
+    it 'return valid with emails different' do
       ator = Ator.new(nome: 'lorem2', email: 'lorem2@lorem.com', ano_nascimento: '2000')
       expect(subject.email).to_not eq(ator.email)
     end
