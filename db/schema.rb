@@ -44,5 +44,4 @@ ActiveRecord::Schema[7.0].define(version: 2022_11_20_110657) do
   end
 
   add_foreign_key "criticas", "Filmes"
-  add_foreign_key "filmes", "ators"
 end
